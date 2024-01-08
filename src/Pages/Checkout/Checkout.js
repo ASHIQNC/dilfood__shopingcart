@@ -6,14 +6,16 @@ const Checkout = () => {
   const Shipping_Estimate = 6;
   const Tax_Estimate = 5;
   const cartData = useSelector((state) => state?.cart.cartData || []);
+  let total = 0;
 
-  if (cartData.length != 0) {
-    var total = cartData
-      ?.map((i) => i.price)
-      .reduce((m, n) => parseFloat(m + n));
+  if (cartData.length > 0) {
+    // Calculate the total price by iterating through each item in the cart
+    for (const item of cartData) {
+      total += parseFloat(item.price);
+    }
     console.log(total);
   } else {
-    var total = 0;
+    total = 0;
   }
   return (
     <div className="md:container md:mx-auto mt-3">
