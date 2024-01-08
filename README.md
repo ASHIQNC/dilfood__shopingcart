@@ -27,7 +27,7 @@ To run this project:
 - After installing nodemodule go to shoppingcart>npm start to run the application
 - To run json server for getting the dummy data
 - Steps:Take another terminal, go to shoppingcart > src >assets > npx json-server --watch db.json --port 4000 
-  Note:Here i have used port number 4000 to run the json server
+- Note:Here i have used port number 4000 to run the json server
 - The above code will run the json server
 
 # Screenshots
