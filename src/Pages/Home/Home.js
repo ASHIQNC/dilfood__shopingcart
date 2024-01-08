@@ -5,11 +5,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  //create an object for useDispatch
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  //apicalling
   const { allProducts, loading } = useSelector((state) => state.cart);
   useEffect(() => {
     dispatch(fetchData());
@@ -23,8 +21,6 @@ const Home = () => {
     <div>
       <div className="md:container md:mx-auto home__container__Wrapper">
         <div className="card__Wrapper  mx-2">
-          {/* card1 */}
-
           {allProducts.length > 0 ? (
             allProducts.map((data) => (
               <div
