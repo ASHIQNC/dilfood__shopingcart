@@ -23,10 +23,11 @@ Setup
 To run this project:
 
 - Clone the repository
-- Type "npm install" inorder to get the nodemodule file
-- After installing nodemodule type "npm start" to run the application
+- Type "npm install"
+- After installing nodemodule go to shoppingcart>npm start to run the application
 - To run json server for getting the dummy data
-- Steps:Take another terminal, go to shoppingcart > src >assets > npx json-server --watch db.json --port 4000
+- Steps:Take another terminal, go to shoppingcart > src >assets > npx json-server --watch db.json --port 4000 
+  Note:Here i have used port number 4000 to run the json server
 - The above code will run the json server
 
 # Screenshots
